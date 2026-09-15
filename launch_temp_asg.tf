@@ -82,7 +82,7 @@ resource "aws_launch_template" "template" {
     yum install -y nginx
     systemctl enable nginx
     systemctl start nginx
-    echo "Hello from a loser, me!" > /usr/share/nginx/html/index.html
+    echo "Hello from a Terraform user, me!" > /usr/share/nginx/html/index.html
     EOF
   )
   tag_specifications {
